@@ -19,11 +19,13 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         }
         int year = 2021;
-        if (year % 4 == 0) {
-            System.out.println("Год високосный.");
-        } else if (year % 100 == 0) {
+        if (year % 4 == 0 && year % 100 == 00 && year % 400 == 00) {
+            System.out.println("Год високосный");
+        } else if (year % 4 == 0 && year % 100 == 0) {
             System.out.println("Год не високосный");
-        } else if (year % 400 == 0) {
+        } else if (year % 4 == 0 && year % 400 == 0) {
+            System.out.println("Год високосный");
+        } else if (year % 4 == 0) {
             System.out.println("Год високосный");
         } else {
             System.out.println("Год не високосный");
